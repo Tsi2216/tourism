@@ -301,7 +301,7 @@ export const foods = [
   },
   {
     id: 3,
-    name: 'Arsi sir argiw',
+    name: 'Qorii',
     type: 'Arsi traditional food',
     place: 'Arsi, Oromia',
     image: '/images/local/arsi-sir-argiw.jpg',
