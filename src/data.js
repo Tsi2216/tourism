@@ -67,7 +67,7 @@ export const destinations = [
   {
     id: 'wollega', name: 'Wollega & Nekemte', region: 'Western Oromia', category: 'Culture', rating: 4.8, reviews: 88,
     distance: '320 km', time: '5–6 hrs', coords: [9.09, 36.55],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600',
+    image: '/images/local/wollega-hand-symbol.jpg',
     description: 'Western Oromia is a broad cultural landscape associated with Wollega Oromo communities, coffee farming, forests, traditional foods and strong local musical traditions.',
     highlights: ['Nekemte', 'Coffee country', 'Wollega culture', 'Forests'],
     video: null, videoSearch: 'https://www.youtube.com/results?search_query=Wollega+Nekemte+Oromia+Ethiopia',
@@ -106,7 +106,7 @@ export const destinations = [
   {
     id: 'abijatta', name: 'Abijatta–Shalla Lakes', region: 'East Shewa, Oromia', category: 'Nature', rating: 4.6, reviews: 74,
     distance: '210 km', time: '3–4 hrs', coords: [7.55, 38.58],
-    image: 'https://images.squarespace-cdn.com/content/v1/63048825027c7c4f568683cd/1661251993509-P1XX1JOKH0BARND1EK8S/Screen%2BShot%2B2022-08-23%2Bat%2B6.41.18%2Bpm.png',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Flamingoes_on_Lake_Abiyatta.jpg',
     description: 'Rift Valley lakes and open landscapes that offer bird watching, scenery and a different side of Oromia’s natural heritage.',
     highlights: ['Birdlife', 'Lakes', 'Scenery', 'Photography'],
     video: null, videoSearch: 'https://www.youtube.com/results?search_query=Abijatta+Shalla+National+Park+Ethiopia',
@@ -209,7 +209,7 @@ export const festivals = [
     place: 'Hora Arsadi, Bishoftu, East Shewa',
     text: 'The Oromo thanksgiving gathering at the shore of Hora Arsadi in Bishoftu.',
     image: '/images/local/irreecha-hora-arsadi.jpg',
-    imageAlt: 'Irreecha gathering at the water in Hora Arsadi',
+    imageAlt: 'Irreecha gathering at Hora Arsadi in Bishoftu',
     source: 'User supplied photograph · Visit Bishoftu',
     sourcePage: 'https://visit-bishoftu.yanoltech.com/en/things-to-do/culture/irreecha-hora-arsedi'
   },
@@ -219,8 +219,8 @@ export const festivals = [
     season: 'Birraa · October',
     place: 'Hora Finfinne, Addis Ababa',
     text: 'Irreecha is also celebrated at Hora Finfinne in Addis Ababa as part of the Oromo thanksgiving season.',
-    image: '/images/local/irreecha-festival.jpg',
-    imageAlt: 'Large Irreecha festival gathering',
+    image: '/images/local/irreecha-hora-finfinne.jpg',
+    imageAlt: 'Irreecha gathering at Hora Finfinne in Addis Ababa',
     source: 'User supplied photograph · Visit Ethiopia',
     sourcePage: 'https://visitethiopia.et/event/irreecha'
   },
@@ -230,8 +230,8 @@ export const festivals = [
     season: 'Birraa',
     place: 'Oromia · sacred lakes and rivers',
     text: 'A thanksgiving tradition associated with gratitude, renewal, peace, blessing and gathering around water and green life.',
-    image: '/images/local/irreecha-festival.jpg',
-    imageAlt: 'Oromo people gathered for Irreecha',
+    image: '/images/local/irreecha-hora-arsadi.jpg',
+    imageAlt: 'Oromo people gathered at Hora Arsadi for Irreecha',
     source: 'User supplied photograph · Visit Ethiopia',
     sourcePage: 'https://visitethiopia.et/event/irreecha'
   },
@@ -301,13 +301,13 @@ export const foods = [
   },
   {
     id: 3,
-    name: 'Buna Qalaa',
-    type: 'Roasted coffee beans · clarified butter',
-    place: 'Oromia',
-    image: '/images/local/buna-qalaa.jpg',
-    imageAlt: 'Buna Qalaa, roasted coffee prepared with butter',
-    source: 'User supplied photograph · Visit Oromia',
-    sourcePage: 'https://artsandculture.google.com/story/YQUxjlTwmrIbfA'
+    name: 'Arsi sir argiw',
+    type: 'Arsi traditional food',
+    place: 'Arsi, Oromia',
+    image: '/images/local/arsi-sir-argiw.jpg',
+    imageAlt: 'Arsi traditional food in a decorated Oromo serving vessel',
+    source: 'User supplied photograph',
+    sourcePage: 'https://artsandculture.google.com/story/KAVhxkWdzikClw'
   },
   {
     id: 4,
@@ -327,6 +327,6 @@ export const imageSources = {
   irreecha2015: 'https://commons.wikimedia.org/wiki/File:Irrecha,2015.jpg',
   oromoBoys: 'https://commons.wikimedia.org/wiki/File:Oromo_Boys.jpg',
   beautyOfOromia: 'https://commons.wikimedia.org/wiki/File:Beauty_of_Oromia.jpg',
-  nekemte: 'https://commons.wikimedia.org/wiki/File:Nekemte_city.jpg',
+  wollegaHandSymbol: '/images/local/wollega-hand-symbol.jpg',
   chatoForest: 'https://commons.wikimedia.org/wiki/File:Chato_Forest.jpg'
 }

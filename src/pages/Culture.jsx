@@ -10,7 +10,7 @@ export default function Culture() {
 
     <section className="wollega-culture-feature">
       <div className="wollega-culture-photo">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600" alt="Nekemte city in western Oromia" loading="lazy" />
+        <img src="/images/local/wollega-hand-symbol.jpg" alt="Wollega hand symbol" loading="lazy" />
       </div>
       <div className="wollega-culture-copy">
         <p className="eyebrow dark">WESTERN OROMIA</p>

@@ -14,7 +14,7 @@ const heroSlides = [
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Irrecha%2C2015.jpg?width=2400', title: 'Irreecha at Hora Arsadi', alt: 'Oromo girls celebrating Irreecha at Hora Arsadi in traditional clothing', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oromo%20Cultural%20dressing.jpg?width=2400', title: 'Oromo Cultural Dress', alt: 'Oromo people wearing traditional clothing at an Irreecha gathering', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beauty%20of%20Oromia.jpg?width=2400', title: 'Oromo Heritage', alt: 'Oromo cultural dress and adornment', credit: 'Wikimedia Commons' },
-  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600', title: 'Wollega · Nekemte', alt: 'Nekemte city in western Oromia', credit: 'Hunde Gemechu · Wikimedia Commons' },
+  { image: '/images/local/wollega-hand-symbol.jpg', title: 'Wollega · Western Oromia', alt: 'Wollega hand symbol image supplied by the user', credit: 'User supplied photograph' },
 ]
 
 const heroVideo = {
@@ -152,8 +152,8 @@ export default function Home() {
 
     <section className="wollega-home-section" id="wollega">
       <div className="wollega-home-photo">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600" alt="Nekemte city in western Oromia" loading="lazy" />
-        <span>Nekemte · Western Oromia</span>
+        <img src="/images/local/wollega-hand-symbol.jpg" alt="Wollega hand symbol" loading="lazy" />
+        <span>Wollega · Western Oromia</span>
       </div>
       <div className="wollega-home-copy">
         <span className="section-index">03</span>
