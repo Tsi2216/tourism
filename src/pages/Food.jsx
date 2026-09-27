@@ -14,6 +14,7 @@ export default function Food(){
           <div>
             <h3>{f.name}</h3>
             <p>{f.type}</p>
+            <small className="food-location">{f.place}</small>
             {f.sourcePage && <a className="food-source" href={f.sourcePage} target="_blank" rel="noreferrer">View source ↗</a>}
           </div>
         </article>)}

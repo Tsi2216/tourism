@@ -10,7 +10,7 @@ export default function Culture() {
 
     <section className="wollega-culture-feature">
       <div className="wollega-culture-photo">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte.jpg?width=1600" alt="Aerial view of Nekemte in western Oromia" loading="lazy" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600" alt="Nekemte city in western Oromia" loading="lazy" />
       </div>
       <div className="wollega-culture-copy">
         <p className="eyebrow dark">WESTERN OROMIA</p>
@@ -33,7 +33,7 @@ export default function Culture() {
     <div className="section-head culture-section-head"><div><p className="eyebrow dark">FESTIVALS & CEREMONIES</p><h2>Celebrate the living calendar</h2></div></div>
     <div className="festival-grid">{festivals.map((f)=><article key={f.id}>
       <img src={f.image} alt={f.imageAlt} loading="lazy"/>
-      <div><span><CalendarDays size={13}/> {f.season}</span><h3>{f.title}</h3><p>{f.text}</p>
+      <div><span><CalendarDays size={13}/> {f.season}</span><h3>{f.title}</h3><small className="festival-location">{f.place}</small><p>{f.text}</p>
         <a className="source-button" href={f.sourcePage} target="_blank" rel="noreferrer">View cultural source <ArrowRight size={14}/></a>
       </div>
     </article>)}</div>
@@ -49,7 +49,7 @@ export default function Culture() {
     <div className="section-head culture-section-head"><div><p className="eyebrow dark">FOODWAYS</p><h2>Taste Oromia</h2></div><Sparkles size={18}/></div>
     <div className="food-grid">{foods.map((f)=><article key={f.id}>
       <img src={f.image} alt={f.imageAlt} loading="lazy"/>
-      <b>{f.name}</b><small>{f.type}</small>
+      <b>{f.name}</b><small>{f.type}</small><small className="food-location">{f.place}</small>
       <a className="food-source" href={f.sourcePage} target="_blank" rel="noreferrer">Source</a>
     </article>)}</div>
   </section></>

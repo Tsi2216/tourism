@@ -1760,6 +1760,16 @@ margin-top:10px}
 display:inline-block;
 margin-top:8px;
 font-size:.78rem}
+
+.food-location,.festival-location {
+font-size:11px;
+color:var(--green2);
+font-weight:700;
+margin-top:5px;
+}
+.food-large-grid .food-location {
+display:block;
+}
 /* ===== Homepage editorial redesign ===== */
 .home-page {
 --home-cream:#f5f1e9;

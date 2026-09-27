@@ -14,7 +14,7 @@ const heroSlides = [
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Irrecha%2C2015.jpg?width=2400', title: 'Irreecha at Hora Arsadi', alt: 'Oromo girls celebrating Irreecha at Hora Arsadi in traditional clothing', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oromo%20Cultural%20dressing.jpg?width=2400', title: 'Oromo Cultural Dress', alt: 'Oromo people wearing traditional clothing at an Irreecha gathering', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
   { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beauty%20of%20Oromia.jpg?width=2400', title: 'Oromo Heritage', alt: 'Oromo cultural dress and adornment', credit: 'Wikimedia Commons' },
-  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte.jpg?width=1280', title: 'Wollega · Nekemte', alt: 'Aerial view of Nekemte in western Oromia', credit: 'Hunde Gemechu · Wikimedia Commons' },
+  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600', title: 'Wollega · Nekemte', alt: 'Nekemte city in western Oromia', credit: 'Hunde Gemechu · Wikimedia Commons' },
 ]
 
 const heroVideo = {
@@ -43,10 +43,8 @@ export default function Home() {
     const timer = window.setInterval(() => {
       setHeroIndex((current) => (current + 1) % heroSlides.length)
     }, 1900)
-    const videoTimer = window.setTimeout(() => setShowHeroVideo(false), 10000)
     return () => {
       window.clearInterval(timer)
-      window.clearTimeout(videoTimer)
     }
   }, [])
   const submitSearch = () => {
@@ -74,9 +72,11 @@ export default function Home() {
           className={`hero-video ${showHeroVideo ? 'is-visible' : ''}`}
           autoPlay
           muted
+          loop={false}
+          preload="auto"
           playsInline
           poster="/images/bale-mountains.jpg"
-          onLoadedMetadata={(event) => { event.currentTarget.playbackRate = 1.75 }}
+          onLoadedMetadata={(event) => { event.currentTarget.playbackRate = 1 }}
           onError={() => setShowHeroVideo(false)}
           onEnded={() => setShowHeroVideo(false)}
         >
@@ -152,7 +152,7 @@ export default function Home() {
 
     <section className="wollega-home-section" id="wollega">
       <div className="wollega-home-photo">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte.jpg?width=1600" alt="Nekemte in western Oromia" loading="lazy" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600" alt="Nekemte city in western Oromia" loading="lazy" />
         <span>Nekemte · Western Oromia</span>
       </div>
       <div className="wollega-home-copy">

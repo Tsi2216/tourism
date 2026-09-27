@@ -41,7 +41,7 @@ export const destinations = [
   {
     id: 'wenchi', name: 'Wenchi Crater Lake', region: 'Southwest Shewa, Oromia', category: 'Nature', rating: 4.8, reviews: 91,
     distance: '155 km', time: '3–4 hrs', coords: [9.03, 37.47],
-    image: 'https://images.squarespace-cdn.com/content/v1/63048825027c7c4f568683cd/1661252041564-1US8HSA8H5VF9LHOPAMN/Screen%2BShot%2B2022-08-23%2Bat%2B8.12.51%2Bpm.png',
+    image: '/images/local/wenchi-crater-lake.jpg',
     description: 'A volcanic crater landscape with a lake, green highlands, farms and community-based experiences.',
     highlights: ['Lake', 'Horse riding', 'Hiking', 'Village visits'],
     video: null, videoSearch: 'https://www.youtube.com/results?search_query=Wenchi+Crater+Lake+Oromia+Ethiopia',
@@ -67,7 +67,7 @@ export const destinations = [
   {
     id: 'wollega', name: 'Wollega & Nekemte', region: 'Western Oromia', category: 'Culture', rating: 4.8, reviews: 88,
     distance: '320 km', time: '5–6 hrs', coords: [9.09, 36.55],
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte.jpg?width=1600',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nekemte%20city.jpg?width=1600',
     description: 'Western Oromia is a broad cultural landscape associated with Wollega Oromo communities, coffee farming, forests, traditional foods and strong local musical traditions.',
     highlights: ['Nekemte', 'Coffee country', 'Wollega culture', 'Forests'],
     video: null, videoSearch: 'https://www.youtube.com/results?search_query=Wollega+Nekemte+Oromia+Ethiopia',
@@ -76,6 +76,19 @@ export const destinations = [
     dress: 'Wollega Oromo clothing has distinctive regional styles and ceremonial dress; local variation should be expected across communities.',
     history: 'Wollega was a historical province and the name continues to be used for the western Oromia cultural area, now administered through several zones.',
     experiences: ['Nekemte city', 'Coffee experiences', 'Local markets', 'Forest landscapes']
+  },
+  {
+    id: 'aanole', name: 'Aanoole Martyrs Memorial', region: 'Hetosa, Arsi Zone, Oromia', category: 'Heritage', rating: 4.7, reviews: 0,
+    distance: '160 km', time: '3–4 hrs', coords: [8.0683, 39.2500],
+    image: '/images/local/aanole-memorial.jpg',
+    description: 'A memorial and cultural heritage site in Hetosa, Arsi Zone, associated with the Aanoole Oromo Martyrs Memorial and the history remembered at Aanoole.',
+    highlights: ['Aanoole', 'Arsi heritage', 'Memorial', 'History'],
+    video: null, videoSearch: 'https://www.youtube.com/results?search_query=Aanoole+Martyrs+Memorial+Hetosa+Arsi+Ethiopia',
+    food: ['Marmaree', 'Marqaa', 'Buna Qalaa'],
+    culture: 'Aanoole is part of the Arsi cultural landscape and is presented as a place of remembrance and heritage.',
+    dress: 'Arsi Oromo ceremonial clothing and beadwork are part of the wider cultural landscape.',
+    history: 'The Aanoole memorial was unveiled in Hetosa in 2014 and forms part of the Aanoole cultural and historical center.',
+    experiences: ['Memorial visit', 'Arsi cultural history', 'Photography', 'Museum and heritage context']
   },
   {
     id: 'bishoftu', name: 'Bishoftu & Hora Harsadi', region: 'East Shewa, Oromia', category: 'Culture', rating: 4.8, reviews: 110,
@@ -190,32 +203,46 @@ export const culturalSystems = [
 
 export const festivals = [
   {
-    id: 'irreecha',
-    title: 'Irreecha',
-    season: 'Birraa',
-    text: 'A major Oromo thanksgiving tradition associated with gratitude, renewal, peace, blessing and gathering around water and green life.',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Irrecha%2C2015.jpg?width=2400',
-    imageAlt: 'Oromo women in traditional dress at an Irreecha gathering',
-    source: 'Google Arts & Culture · Visit Oromia',
-    sourcePage: 'https://artsandculture.google.com/asset/the-oromo-people-moti-pictures/CgEaER0NmtrqlA'
+    id: 'irreecha-arsadi',
+    title: 'Irreecha at Hora Arsadi',
+    season: 'Birraa · October',
+    place: 'Hora Arsadi, Bishoftu, East Shewa',
+    text: 'The Oromo thanksgiving gathering at the shore of Hora Arsadi in Bishoftu.',
+    image: '/images/local/irreecha-hora-arsadi.jpg',
+    imageAlt: 'Irreecha gathering at the water in Hora Arsadi',
+    source: 'User supplied photograph · Visit Bishoftu',
+    sourcePage: 'https://visit-bishoftu.yanoltech.com/en/things-to-do/culture/irreecha-hora-arsedi'
   },
   {
-    id: 'ayyaana',
-    title: 'Ayyaana & Community Celebrations',
-    season: 'Regional',
-    text: 'Community celebrations connect ritual, music, dance, food, family and local identity. Practices vary by place and community.',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oromo%20Cultural%20dressing.jpg?width=2400',
-    imageAlt: 'Oromo woman in traditional Jimma clothing',
-    source: 'Google Arts & Culture · Visit Oromia · Dagi Pictures',
-    sourcePage: 'https://artsandculture.google.com/asset/jimma-oromo-traditional-outfit-dagi-pictures/AgFu7t24qz68fw'
+    id: 'irreecha-finfinne',
+    title: 'Irreecha at Hora Finfinne',
+    season: 'Birraa · October',
+    place: 'Hora Finfinne, Addis Ababa',
+    text: 'Irreecha is also celebrated at Hora Finfinne in Addis Ababa as part of the Oromo thanksgiving season.',
+    image: '/images/local/irreecha-festival.jpg',
+    imageAlt: 'Large Irreecha festival gathering',
+    source: 'User supplied photograph · Visit Ethiopia',
+    sourcePage: 'https://visitethiopia.et/event/irreecha'
+  },
+  {
+    id: 'irreecha-general',
+    title: 'Irreecha Festival',
+    season: 'Birraa',
+    place: 'Oromia · sacred lakes and rivers',
+    text: 'A thanksgiving tradition associated with gratitude, renewal, peace, blessing and gathering around water and green life.',
+    image: '/images/local/irreecha-festival.jpg',
+    imageAlt: 'Oromo people gathered for Irreecha',
+    source: 'User supplied photograph · Visit Ethiopia',
+    sourcePage: 'https://visitethiopia.et/event/irreecha'
   },
   {
     id: 'gadaa-handover',
     title: 'Gadaa Leadership Ceremonies',
     season: 'Cycle-based',
+    place: 'Oromia',
     text: 'Leadership transition ceremonies are part of the Gadaa cycle and carry laws, oral knowledge, symbols and community responsibilities.',
     image: 'https://commons.wikimedia.org/wiki/Special:FilePath/%E1%8B%A8%20%E1%8C%88%E1%8B%B3%20%E1%88%B5%E1%8A%90%E1%88%B5%E1%88%AD%E1%8A%A3%E1%89%B5.jpg?width=1573',
-    imageAlt: 'A real Gadaa cultural scene from Ethiopia',
+    imageAlt: 'A Gadaa cultural scene from Ethiopia',
     source: 'UNESCO · Gadaa system',
     sourcePage: 'https://ich.unesco.org/en/RL/gada-system-an-indigenous-democratic-socio-political-system-of-the-oromo-01164'
   }
@@ -254,42 +281,45 @@ export const cultureStories = [
 export const foods = [
   {
     id: 1,
-    name: 'Marqaa',
-    type: 'Barley porridge · dhadhaa',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Oromo_Cultural_Food.jpg',
-    imageAlt: 'Traditional Oromo food vessels and cultural foods',
-    source: 'Google Arts & Culture · Visit Oromia · Moti Pictures',
-    sourcePage: 'https://artsandculture.google.com/asset/arsi-oromo-traditional-outfits-and-dishes-moti-pictures/tAGKp2PETJWjxA'
+    name: 'Marmaree',
+    type: 'Arsi traditional snack · barley/wheat · butter',
+    place: 'Arsi, Oromia',
+    image: '/images/local/marmaree-arsi.jpg',
+    imageAlt: 'Marmaree, an Arsi Oromo traditional food',
+    source: 'User supplied photograph · Visit Oromia documents Marmaree as an Arsi Oromo snack',
+    sourcePage: 'https://artsandculture.google.com/story/KAVhxkWdzikClw'
   },
   {
     id: 2,
-    name: 'Marmaree',
-    type: 'Arsi snack · wheat · butter',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Oromo_Cultural_Food.jpg',
-    imageAlt: 'Traditional Oromo cultural food presentation',
-    source: 'Google Arts & Culture · Visit Oromia',
-    sourcePage: 'https://artsandculture.google.com/story/the-maaddii-a-table-of-traditional-dishes-shared-with-family-and-friends-visit-oromia/qQUhokB3Y9oKjg'
+    name: 'Chumbo',
+    type: 'Wollega traditional food · teff or grain flatbread',
+    place: 'Wollega, Western Oromia',
+    image: '/images/local/chumbo-wollega.jpg',
+    imageAlt: 'Chumbo served as a traditional Wollega food',
+    source: 'User supplied photograph · Wollega food reference',
+    sourcePage: 'https://www.ena.et/web/eng/w/eng_4607042'
   },
   {
     id: 3,
     name: 'Buna Qalaa',
-    type: 'Coffee beans · clarified butter',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Oromo_Dishes.jpg',
-    imageAlt: 'Traditional Oromo coffee cultural artefacts',
-    source: 'Google Arts & Culture · Visit Oromia · Moti Pictures',
-    sourcePage: 'https://artsandculture.google.com/asset/buna-qalaa-moti-pictures/TAFpYgH0kuDiOQ'
+    type: 'Roasted coffee beans · clarified butter',
+    place: 'Oromia',
+    image: '/images/local/buna-qalaa.jpg',
+    imageAlt: 'Buna Qalaa, roasted coffee prepared with butter',
+    source: 'User supplied photograph · Visit Oromia',
+    sourcePage: 'https://artsandculture.google.com/story/YQUxjlTwmrIbfA'
   },
   {
     id: 4,
-    name: 'Traditional Oromo Meal',
-    type: 'Maaddii · marqaa · milk',
-    image: 'https://lh3.googleusercontent.com/ci/AL18g_Rm6sGZLVxIGwrRGe2oU09UhOjx7qvRs6mxFNa5epa0AkdMBkDWnnzJTlWY9pH2uwRRtGXG6Dk',
-    imageAlt: 'Traditional Oromo foods, vessels and dress',
-    source: 'Google Arts & Culture · Visit Oromia',
-    sourcePage: 'https://artsandculture.google.com/story/the-maaddii-a-table-of-traditional-dishes-shared-with-family-and-friends-visit-oromia/qQUhokB3Y9oKjg'
+    name: 'Marqaa',
+    type: 'Barley porridge · dhadhaa',
+    place: 'Arsi, Oromia',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Oromo_Cultural_Food.jpg',
+    imageAlt: 'Traditional Oromo food vessels and cultural foods',
+    source: 'Visit Oromia · Google Arts & Culture',
+    sourcePage: 'https://artsandculture.google.com/story/yQUxxFucKpFByg'
   }
 ]
-
 
 
 export const imageSources = {
@@ -297,6 +327,6 @@ export const imageSources = {
   irreecha2015: 'https://commons.wikimedia.org/wiki/File:Irrecha,2015.jpg',
   oromoBoys: 'https://commons.wikimedia.org/wiki/File:Oromo_Boys.jpg',
   beautyOfOromia: 'https://commons.wikimedia.org/wiki/File:Beauty_of_Oromia.jpg',
-  nekemte: 'https://commons.wikimedia.org/wiki/File:Nekemte.jpg',
+  nekemte: 'https://commons.wikimedia.org/wiki/File:Nekemte_city.jpg',
   chatoForest: 'https://commons.wikimedia.org/wiki/File:Chato_Forest.jpg'
 }
