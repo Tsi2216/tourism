@@ -1,12 +1,20 @@
 import { ArrowRight, CalendarDays, Landmark, Sparkles } from 'lucide-react'
 import TopBar from '../components/TopBar'
-import { culturalSystems, cultureStories, festivals, foods } from '../data'
+import { culturalRegions, culturalSystems, cultureStories, festivals, foods } from '../data'
 
 export default function Culture() {
   return <><TopBar title="Culture & Stories" back menu /><section className="culture-page">
     <div className="culture-hero"><img src={cultureStories[2].image} alt="Oromo culture"/><div><p className="eyebrow">LIVING HERITAGE</p><h1>Oromia, beyond the landscape.</h1><p>Systems, stories, food, clothing, music, festivals and knowledge carried from generation to generation.</p></div></div>
 
     <div className="culture-intro"><Landmark/><div><b>Explore the culture atlas</b><p>This collection is a starting point, not an exhaustive inventory. Oromo traditions vary across communities and regions, so each story should be read in its local context.</p></div></div>
+
+    <section className="cultural-regions-section">
+      <div className="section-head culture-section-head"><div><p className="eyebrow dark">CULTURAL REGIONS & DRESS</p><h2>Meet the people of Oromia</h2></div></div>
+      <div className="cultural-regions-grid">{culturalRegions.map((region)=><article key={region.id} className="cultural-region-card">
+        <div className="cultural-region-photo"><img src={region.image} alt={region.imageAlt} loading="lazy"/><span>{region.name}</span></div>
+        <div className="cultural-region-copy"><p>{region.text}</p></div>
+      </article>)}</div>
+    </section>
 
     <section className="wollega-culture-feature">
       <div className="wollega-culture-photo">

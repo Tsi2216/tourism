@@ -118,6 +118,86 @@ export const destinations = [
   }
 ]
 
+export const culturalRegions = [
+  {
+    id: 'arsi',
+    name: 'Arsi',
+    image: '/images/culture/arsi.jpg',
+    imageAlt: 'Arsi Oromo women in traditional cultural clothing',
+    text: 'Arsi is a historic Oromo cultural area in the central-southeastern highlands of Oromia. Its communities are known for rich traditions of Gadaa, poetry, music, farming and distinctive ceremonial dress. This photograph highlights Arsi women in traditional clothing and adornment used to express identity and celebration.'
+  },
+  {
+    id: 'jimma',
+    name: 'Jimma',
+    image: '/images/culture/jimma.jpg',
+    imageAlt: 'Jimma Oromo women in traditional cultural clothing',
+    text: 'Jimma, in southwestern Oromia, is a major cultural and coffee-growing area with a long history of Oromo community life. Coffee, hospitality, music and traditional dress are important parts of the region’s cultural landscape. This photograph highlights a contemporary presentation of Jimma Oromo dress and adornment.'
+  },
+  {
+    id: 'borana',
+    name: 'Borana',
+    image: '/images/culture/borana.jpg',
+    imageAlt: 'Borana Oromo women in traditional cultural clothing',
+    text: 'Borana is a southern Oromo cultural area known for pastoral traditions, the Gadaa system, strong oral knowledge and community ceremonies. The Borana landscape stretches across drylands, grasslands and important cultural meeting places. This photograph highlights colorful traditional clothing and adornment worn by Borana women.'
+  },
+  {
+    id: 'bale',
+    name: 'Bale',
+    image: '/images/culture/bale.jpg',
+    imageAlt: 'Oromo women in traditional Bale cultural clothing',
+    text: 'Bale is a diverse highland area of southeastern Oromia, where Oromo communities live alongside forests, grasslands and the Bale Mountains landscape. Local life brings together farming, pastoralism, hospitality and cultural traditions. This photograph presents traditional clothing and adornment associated with the Bale area.'
+  },
+  {
+    id: 'shawa',
+    name: 'Shawa',
+    image: '/images/culture/shawa.jpg',
+    imageAlt: 'Shawa Oromo women in traditional cultural clothing',
+    text: 'Shawa (Shewa) covers a broad part of central Oromia and has many Oromo communities with their own local expressions of music, dress, food and ceremony. The area also connects highland farming communities with important historic cultural landscapes. This photograph shows a group in Shawa Oromo-inspired cultural dress and adornment.'
+  },
+  {
+    id: 'karayu',
+    name: 'Karayu',
+    image: '/images/culture/karayu.jpg',
+    imageAlt: 'Karayu Oromo traditional cultural scene',
+    text: 'The Karayu Oromo are a pastoral community associated especially with the East Shewa and Fentale area of the Rift Valley. Cattle, seasonal movement, community relationships and Gadaa traditions have long shaped Karayu cultural life. This photograph gives a visual glimpse of Karayu traditional clothing and grooming.'
+  },
+  {
+    id: 'wollega',
+    name: 'Wollega',
+    image: '/images/culture/wollega.jpg',
+    imageAlt: 'Wollega Oromo people in traditional cultural clothing',
+    text: 'Wollega is a broad cultural area in western Oromia, known for fertile farmland, forests, coffee-growing areas and strong Maccaa Oromo traditions. Nekemte and surrounding communities are important centres of cultural and economic life. This photograph shows Wollega Oromo clothing and community expression.'
+  },
+  {
+    id: 'walo-oromo',
+    name: 'Walo Oromo',
+    image: '/images/culture/walo-oromo.jpg',
+    imageAlt: 'Walo Oromo women in traditional cultural clothing',
+    text: 'Walo is a historic cultural area in the northern Ethiopian highlands where Oromo communities have lived alongside other peoples and developed diverse local traditions. Oromo communities in the Walo area maintain distinctive expressions of language, dress, music and ceremony. This photograph highlights colorful traditional clothing and adornment.'
+  },
+  {
+    id: 'guji',
+    name: 'Guji',
+    image: '/images/culture/guji.jpg',
+    imageAlt: 'Guji Oromo cultural ceremony',
+    text: 'Guji is a southern Oromo cultural area famous for coffee-growing landscapes, pastoral life and living Gadaa traditions. Community ceremonies, oral knowledge, music and traditional clothing remain important expressions of identity. This photograph captures a Guji cultural setting with traditional clothing and ceremonial objects.'
+  },
+  {
+    id: 'raya',
+    name: 'Raya',
+    image: '/images/culture/raya.jpg',
+    imageAlt: 'Raya Oromo people in traditional cultural clothing',
+    text: 'Raya is a culturally diverse highland area in northern Ethiopia with a long history of Oromo communities and interaction among neighboring peoples. Local traditions include distinctive clothing, music, farming and pastoral practices. This supplied photograph is presented as a visual example of Raya-area cultural dress and adornment.'
+  },
+  {
+    id: 'kamisse',
+    name: 'Kamisse',
+    image: '/images/culture/kamisse.jpg',
+    imageAlt: 'Oromo women in traditional Kamisse cultural clothing',
+    text: 'Kamisse (Kemise) is a town and surrounding area in the northern Rift Valley region, with diverse communities and cultural traditions. Oromo cultural expression in the area includes local clothing, music, food and community celebrations. This supplied photograph is used as a visual reference for the traditional Oromo women’s clothing shown here.'
+  }
+]
+
 export const culturalSystems = [
   {
     id: 'gadaa',

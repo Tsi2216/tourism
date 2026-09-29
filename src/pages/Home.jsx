@@ -8,13 +8,17 @@ import { SearchBox } from '../components/TopBar'
 import { culturalSystems, destinations } from '../data'
 
 const heroSlides = [
-  { image: '/images/sof-omar-cave.jpg', title: 'Sof Omar Cave', alt: 'Sof Omar Cave in Bale, Oromia', credit: 'User supplied photograph' },
-  { image: '/images/lake-langano.jpg', title: 'Lake Langano', alt: 'Lake Langano in Oromia', credit: 'User supplied photograph' },
-  { image: '/images/bale-mountains.jpg', title: 'Bale Mountains', alt: 'Bale Mountains landscape in Oromia', credit: 'User supplied photograph' },
-  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Irrecha%2C2015.jpg?width=2400', title: 'Irreecha at Hora Arsadi', alt: 'Oromo girls celebrating Irreecha at Hora Arsadi in traditional clothing', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
-  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oromo%20Cultural%20dressing.jpg?width=2400', title: 'Oromo Cultural Dress', alt: 'Oromo people wearing traditional clothing at an Irreecha gathering', credit: 'Mekonnen B. Gedefa · Wikimedia Commons' },
-  { image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Beauty%20of%20Oromia.jpg?width=2400', title: 'Oromo Heritage', alt: 'Oromo cultural dress and adornment', credit: 'Wikimedia Commons' },
-  { image: '/images/local/wollega-hand-symbol.jpg', title: 'Wollega · Western Oromia', alt: 'Wollega hand symbol image supplied by the user', credit: 'User supplied photograph' },
+  { image: '/images/culture/arsi.jpg', title: 'Arsi Oromo', alt: 'Arsi Oromo women in traditional cultural clothing', credit: 'User supplied photograph' },
+  { image: '/images/culture/jimma.jpg', title: 'Jimma Oromo', alt: 'Jimma Oromo women in traditional cultural clothing', credit: 'User supplied photograph' },
+  { image: '/images/culture/borana.jpg', title: 'Borana Oromo', alt: 'Borana Oromo women in traditional cultural clothing', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/bale.jpg', title: 'Bale Oromo', alt: 'Oromo women in traditional Bale cultural clothing', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/shawa.jpg', title: 'Shawa Oromo', alt: 'Shawa Oromo women in traditional cultural clothing', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/karayu.jpg', title: 'Karayu Oromo', alt: 'Karayu Oromo traditional cultural scene', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/wollega.jpg', title: 'Wollega Oromo', alt: 'Wollega Oromo people in traditional cultural clothing', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/walo-oromo.jpg', title: 'Walo Oromo', alt: 'Walo Oromo women in traditional cultural clothing', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/guji.jpg', title: 'Guji Oromo', alt: 'Guji Oromo cultural ceremony', credit: 'User supplied photograph from screen recording' },
+  { image: '/images/culture/raya.jpg', title: 'Raya Oromo', alt: 'Raya Oromo people in traditional cultural clothing', credit: 'User supplied photograph' },
+  { image: '/images/culture/kamisse.jpg', title: 'Kamisse Oromo', alt: 'Oromo women in traditional Kamisse cultural clothing', credit: 'User supplied photograph from screen recording' },
 ]
 
 const heroVideo = {
@@ -40,13 +44,14 @@ export default function Home() {
   const hero = heroSlides[heroIndex]
 
   useEffect(() => {
+    if (showHeroVideo) return undefined
     const timer = window.setInterval(() => {
       setHeroIndex((current) => (current + 1) % heroSlides.length)
     }, 1900)
     return () => {
       window.clearInterval(timer)
     }
-  }, [])
+  }, [showHeroVideo])
   const submitSearch = () => {
     const q = query.trim()
     navigate(q ? `/explore?q=${encodeURIComponent(q)}` : '/explore')
@@ -77,8 +82,8 @@ export default function Home() {
           playsInline
           poster="/images/bale-mountains.jpg"
           onLoadedMetadata={(event) => { event.currentTarget.playbackRate = 1 }}
-          onError={() => setShowHeroVideo(false)}
-          onEnded={() => setShowHeroVideo(false)}
+          onError={() => { setHeroIndex(0); setShowHeroVideo(false) }}
+          onEnded={() => { setHeroIndex(0); setShowHeroVideo(false) }}
         >
           <source src={heroVideo.src} type="video/webm" />
         </video>
