@@ -204,7 +204,7 @@ export const culturalSystems = [
     title: 'Gadaa System',
     label: 'Governance · Heritage',
     text: 'A traditional Oromo socio-political system regulating political, economic, social and religious life. UNESCO inscribed Gadaa on the Representative List in 2016.',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/%E1%8B%A8%20%E1%8C%88%E1%8B%B3%20%E1%88%B5%E1%8A%90%E1%88%B5%E1%88%AD%E1%8A%A3%E1%89%B5.jpg?width=1573',
+    image: '/images/local/gadaa-user.jpg',
     imageAlt: 'A real Gadaa cultural scene photographed in Ethiopia',
     source: 'Visual reference: Wikimedia Commons · text source: UNESCO Gadaa documentation',
     sourcePage: 'https://commons.wikimedia.org/wiki/File:%E1%8B%A8_%E1%8C%88%E1%8B%B3_%E1%88%B5%E1%8A%90%E1%88%B5%E1%88%AD%E1%8A%A3%E1%89%B5.jpg'
@@ -214,7 +214,7 @@ export const culturalSystems = [
     title: 'Siinqee',
     label: 'Women · Peace · Social institution',
     text: 'Siinqee is associated with women’s social authority, solidarity and peace-making. The staff is carried by Haadha Siinqee in documented Oromo traditions.',
-    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Oromo%20Cultural%20dressing.jpg?width=2400',
+    image: '/images/local/siinqee-user.jpg',
     imageAlt: 'Oromo people wearing traditional clothing at an Irreecha gathering',
     source: 'Visual reference: Wikimedia Commons · text source: UNESCO Gadaa documentation',
     sourcePage: 'https://artsandculture.google.com/asset/oromo-women/lwEmHLdAelKoVw'
@@ -394,7 +394,7 @@ export const foods = [
     name: 'Marqaa',
     type: 'Barley porridge · dhadhaa',
     place: 'Arsi, Oromia',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Oromo_Cultural_Food.jpg',
+    image: '/images/local/marqaa-user.jpg',
     imageAlt: 'Traditional Oromo food vessels and cultural foods',
     source: 'Visit Oromia · Google Arts & Culture',
     sourcePage: 'https://artsandculture.google.com/story/yQUxxFucKpFByg'
